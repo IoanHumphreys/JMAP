@@ -22,4 +22,5 @@ JMAP is a versatile tool designed to streamline the integration of Fortnite JSON
 - UI Widget Exporter
 - Audio Exporter
 
+- Creating it as an EXE App using Inno
 
