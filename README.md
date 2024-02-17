@@ -1,4 +1,5 @@
 # JMAP
+![Static Badge](https://img.shields.io/badge/JMAP-blue) ![Static Badge](https://img.shields.io/badge/UEFN-red) ![Static Badge](https://img.shields.io/badge/MAINTAINED-purple)
 
 JMAP is a versatile tool designed to streamline the integration of Fortnite JSON data into Unreal Engine Fortnite (UEFN) projects. With its intuitive interface and powerful conversion capabilities, JMAP simplifies the process of importing Points of Interest (POIs), UI widgets, audio files, texture data, vertex data, and more into your Unreal Engine project, ensuring seamless compatibility with Fortnite game environments.
 
@@ -8,9 +9,3 @@ JMAP is a versatile tool designed to streamline the integration of Fortnite JSON
 - JMAP operates by utilizing FModel JSON data as its primary source input, leveraging the structured information contained within FModel JSON files.
 
 
-<a href="https://next.ossinsight.io/widgets/official/compose-contributors?repo_id=758907636&limit=200" target="_blank" style="display: block" align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://next.ossinsight.io/widgets/official/compose-contributors/thumbnail.png?repo_id=758907636&limit=200&image_size=auto&color_scheme=dark" width="655" height="auto">
-    <img alt="Contributors of IoanHumphreys/JMAP" src="https://next.ossinsight.io/widgets/official/compose-contributors/thumbnail.png?repo_id=758907636&limit=200&image_size=auto&color_scheme=light" width="655" height="auto">
-  </picture>
-</a>
