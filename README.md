@@ -18,6 +18,7 @@ JMAP is a versatile tool designed to streamline the integration of Fortnite JSON
   - Breakable Props Toggle: Allow users to toggle a option which makes a prop breakable or not
   - Vertex Data
   - Texture Data
+  - Only Static Mesh feature so users are able to customize their own "Loot Lake"
  
 - UI Widget Exporter
 - Audio Exporter
