@@ -8,4 +8,18 @@ JMAP is a versatile tool designed to streamline the integration of Fortnite JSON
 - Code Editing Features: JMAP provides advanced features that enable developers to edit the outputted code before entering the game, ensuring flexibility and customization according to project requirements.
 - JMAP operates by utilizing FModel JSON data as its primary source input, leveraging the structured information contained within FModel JSON files.
 
+- POI Importer
+  - Renaming the Output File: Allow users to enter a output.txt file name within an input box
+  - Actor Label Editor: Allowing users to change the name of certain props
+  - Developer Mode: Gives an insight to developers on whats getting run at what time, date, path ect
+  - Changing Output Location: Allowing user to move where POIS export to
+  - Creating a config.ini file
+  - Potentially a Live Editor: Allows developers to change the outputted code in realtime
+  - Breakable Props Toggle: Allow users to toggle a option which makes a prop breakable or not
+  - Vertex Data
+  - Texture Data
+ 
+- UI Widget Exporter
+- Audio Exporter
+
 
