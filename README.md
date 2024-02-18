@@ -9,6 +9,7 @@ JMAP is a versatile tool designed to streamline the integration of Fortnite JSON
 - JMAP operates by utilizing FModel JSON data as its primary source input, leveraging the structured information contained within FModel JSON files.
 
 - POI Importer
+  - Config.ini will hold an option for theme changes
   - Store JSON after use into the Stored folder
   - Set Input Location: Allow users to set the input location to e.g FModel dict
   - Renaming the Output File: Allow users to enter a output.txt file name within an input box
