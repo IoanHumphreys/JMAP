@@ -9,14 +9,8 @@ JMAP is a versatile tool designed to streamline the integration of Fortnite JSON
 - JMAP operates by utilizing FModel JSON data as its primary source input, leveraging the structured information contained within FModel JSON files.
 
 - POI Importer
-  - Config.ini will hold an option for theme changes
-  - Store JSON after use into the Stored folder
-  - Set Input Location: Allow users to set the input location to e.g FModel dict
   - Actor Label Editor: Allowing users to change the name of certain props
   - Developer Mode: Gives an insight to developers on whats getting run at what time, date, path ect
-  - Changing Output Location: Allowing user to move where POIS export to
-  - Creating a config.ini file
-  - Potentially a Live Editor: Allows developers to change the outputted code in realtime
   - Breakable Props Toggle: Allow users to toggle a option which makes a prop breakable or not
   - Vertex Data
   - Texture Data
