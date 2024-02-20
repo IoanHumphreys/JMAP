@@ -15,6 +15,7 @@ JMAP is a versatile tool designed to streamline the integration of Fortnite JSON
   - Vertex Data
   - Texture Data
   - Only Static Mesh feature so users are able to customize their own "Loot Lake"
+  - Combine files feature allows all files with _jmap.txt to be combined
  
 - UI Widget Exporter
 - Audio Exporter
