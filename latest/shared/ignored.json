@@ -1,0 +1,19 @@
+{
+    "ignored_components": [
+        "StaticMeshComponent",
+        "ParticleSystemComponent",
+        "PointLightComponent",
+        "SkeletalMeshComponent",
+        "SpotLightComponent",
+        "AudioComponent",
+        "BoxComponent",
+        "BlueprintGeneratedClass",
+        "UScriptClass",
+        "NavigationSystemConfig"
+    ],
+    "ignored_props": [
+        "Car_Copper_C",
+        "BP_Waterfall_C",
+        "BP_Athena_Water_C"
+    ]
+}
