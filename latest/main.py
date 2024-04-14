@@ -2,6 +2,8 @@ import customtkinter
 from tkinter import filedialog
 from tkinter import messagebox
 import configparser
+import subprocess
+import sys
 from PIL import Image
 import json
 import os
@@ -12,8 +14,25 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 def read_config():
     config = configparser.ConfigParser()
-    config.read('shared/config.ini') 
+    config.read('shared/config.ini')
     return config
+
+def install_packages():
+    config = read_config()
+    packages = config['Packages']
+    for package, value in packages.items():
+        if value.lower() == 'true':
+            try:
+                subprocess.check_call([sys.executable, '-m', 'pip', 'install', package])
+                # Change the value to 'false' after successful installation
+                config.set('Packages', package, 'false')
+                with open('shared/config.ini', 'w') as configfile:
+                    config.write(configfile)
+            except subprocess.CalledProcessError as e:
+                print(f"Error installing {package}: {e}")
+
+if __name__ == "__main__":
+    install_packages()
 
 def save_config(config):
     with open('shared/config.ini', 'w') as configfile:
