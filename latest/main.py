@@ -8,6 +8,7 @@ from PIL import Image
 import json
 import os
 import datetime
+import webbrowser
 
 # Define paths
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -70,10 +71,17 @@ def update_fmodel_folder():
 def show_poi_frame():
     poi_frame.grid()
     settings_frame.grid_remove()
+    builds_files.grid_remove()
+
+def show_builds_frame():
+    builds_files.grid()
+    settings_frame.grid_remove()
+    poi_frame.grid_remove() 
 
 def show_settings_frame():
     settings_frame.grid() 
     poi_frame.grid_remove() 
+    builds_files.grid_remove() 
 
 def generate_converted_json():
     try:
@@ -81,6 +89,20 @@ def generate_converted_json():
         messagebox.showinfo("Success", "The JSON files have been successfully converted.")
     except Exception as e:
         messagebox.showerror("Error", f"An error occurred during the conversion: {str(e)}")
+
+# AES Keys Link
+def aes_keys_link():
+    webbrowser.open("https://github.com/dippyshere/fortnite-aes-archive/tree/master")
+
+def aes_keys_link():
+    webbrowser.open("https://github.com/dippyshere/fortnite-aes-archive/tree/master")
+
+# Fortnite Builds Link
+def fortnite_builds_link():
+    webbrowser.open("https://github.com/notsamicc/Fortnite-Builds")
+
+def fortnite_builds_link():
+    webbrowser.open("https://github.com/notsamicc/Fortnite-Builds")
 
 # Setup App 
 app = customtkinter.CTk(fg_color='#111112')
@@ -130,9 +152,9 @@ pp_import_image = customtkinter.CTkImage(light_image=Image.open("cache/icons/pos
 pp_import = customtkinter.CTkButton(sidebar_frame, fg_color="transparent", font=side_bar_text, image=pp_import_image, anchor="w", text="Post Processing", height=40, width=220, hover_color="#252529")
 pp_import.grid(row=6, column=0, padx=20, pady=10, sticky="w")
 
-combine_files_image = customtkinter.CTkImage(light_image=Image.open("cache/icons/combine_files.png"), size=(20, 20))
-combine_files = customtkinter.CTkButton(sidebar_frame, fg_color="transparent", font=side_bar_text, image=combine_files_image, anchor="w", text="Combine Files", height=40, width=220, hover_color="#252529")
-combine_files.grid(row=7, column=0, padx=20, pady=10, sticky="w")
+builds_files_image = customtkinter.CTkImage(light_image=Image.open("cache/icons/builds_files.png"), size=(20, 20))
+builds_files = customtkinter.CTkButton(sidebar_frame, fg_color="transparent", font=side_bar_text, image=builds_files_image, anchor="w", text="AES & Builds", height=40, width=220, hover_color="#252529", command=show_builds_frame)
+builds_files.grid(row=7, column=0, padx=20, pady=10, sticky="w")
 
 # Additional buttons
 support_button_image = customtkinter.CTkImage(light_image=Image.open("cache/icons/support_button.png"), size=(20, 20))
@@ -160,6 +182,29 @@ poi_label.grid(row=1, column=0, padx=30, pady=40, sticky="w")
 poi_btn_font = customtkinter.CTkFont(family="Poppins", size=14, weight="normal")
 poi_generate = customtkinter.CTkButton(poi_frame, text="Generate Files", hover_color="#06B66B", fg_color="#029556", border_width=0, text_color="#C9FFE8", height=35, font=poi_btn_font, command=generate_converted_json)
 poi_generate.grid(row=2, column=0, padx=30, pady=10, sticky="w")
+
+# AES & Builds Frame
+builds_files = customtkinter.CTkFrame(app, corner_radius=0, fg_color="transparent")
+builds_files.grid(row=0, column=1, sticky="nsew", padx=20, pady=20)
+builds_files.columnconfigure(0, weight=1)
+
+# AES Text Label
+aes_files_text = customtkinter.CTkLabel(builds_files, text="AES Keys", font=title_font)
+aes_files_text.grid(row=1, column=0, padx=30, pady=20, sticky="w")
+
+# AES Link Button
+aes_btn_font = customtkinter.CTkFont(family="Poppins", size=14, weight="normal")
+aes_keys_btn = customtkinter.CTkButton(builds_files, text="View AES Keys", hover_color="#0d67f2", fg_color="#2e66d1", border_width=0, text_color="#C9FFE8", height=35, font=aes_btn_font, command=aes_keys_link)
+aes_keys_btn.grid(row=2, column=0, padx=30, pady=10, sticky="w")
+
+# Builds Text Label
+fortnite_builds = customtkinter.CTkLabel(builds_files, text="Fortnite Builds", font=title_font)
+fortnite_builds.grid(row=3, column=0, padx=30, pady=20, sticky="w")
+
+# Builds Link Button
+fortnite_builds_font = customtkinter.CTkFont(family="Poppins", size=14, weight="normal")
+fortnite_builds_btn = customtkinter.CTkButton(builds_files, text="View Fortnite Builds", hover_color="#0d67f2", fg_color="#2e66d1", border_width=0, text_color="#C9FFE8", height=35, font=fortnite_builds_font, command=fortnite_builds_link)
+fortnite_builds_btn.grid(row=4, column=0, padx=30, pady=10, sticky="w")
 
 # Settings
 settings_frame = customtkinter.CTkFrame(app, corner_radius=0, fg_color="transparent")
