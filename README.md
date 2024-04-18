@@ -9,10 +9,10 @@ JMAP is a versatile tool designed to streamline the integration of Fortnite JSON
 - JMAP operates by utilizing FModel JSON data as its primary source input, leveraging the structured information contained within FModel JSON files.
 
 - Instructions
-  1 - Download and open folder with a code editor.
-  2 - Make sure to pip install all imports.
-  3 - Run `python main.py` in terminal.
-  4 -  Feel free to customize and edit json paths if you know what you're doing.
+  1 Download and open folder with a code editor.
+  2 Make sure to pip install all imports.
+  3 Run `python main.py` in terminal.
+  4 Feel free to customize and edit json paths if you know what you're doing.
 
 - POI Importer
   - Actor Label Editor: Allowing users to change the name of certain props
