@@ -14,6 +14,9 @@ JMAP is a versatile tool designed to streamline the integration of Fortnite JSON
 3) Run `python main.py` in terminal.
 4) Feel free to customize and edit json paths if you know what you're doing.
 
+# Basic Guide
+https://www.youtube.com/watch?v=Q2PsSxmWSs4&ab_channel=Razlar
+
 # Future of JMAP
 - POI Importer
   - Actor Label Editor: Allowing users to change the name of certain props
