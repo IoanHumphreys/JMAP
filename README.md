@@ -27,9 +27,3 @@ https://www.youtube.com/watch?v=Q2PsSxmWSs4&ab_channel=Razlar
   - Only Static Mesh feature so users are able to customize their own "Loot Lake"
   - Combine files feature allows all files with _jmap.txt to be combined
  
-- UI Widget Exporter
-- Audio Exporter
-
-- Creating it as an EXE App using Inno
-
-- STILL IN DEVELOPMENT
