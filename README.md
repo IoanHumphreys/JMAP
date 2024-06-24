@@ -8,22 +8,8 @@ JMAP is a versatile tool designed to streamline the integration of Fortnite JSON
 - Code Editing Features: JMAP provides advanced features that enable developers to edit the outputted code before entering the game, ensuring flexibility and customization according to project requirements.
 - JMAP operates by utilizing FModel JSON data as its primary source input, leveraging the structured information contained within FModel JSON files.
 
-# Instructions
-1) Download and open folder with a code editor.
-2) Make sure to pip install all imports.
-3) Run `python main.py` in terminal.
-4) Feel free to customize and edit json paths if you know what you're doing.
-
 # Basic Guide
-https://www.youtube.com/watch?v=Q2PsSxmWSs4&ab_channel=Razlar
+https://www.youtube.com/watch?v=LRHuiETTwJU&t=521s&ab_channel=Razlar
 
-# Future of JMAP
-- POI Importer
-  - Actor Label Editor: Allowing users to change the name of certain props
-  - Developer Mode: Gives an insight to developers on whats getting run at what time, date, path ect
-  - Breakable Props Toggle: Allow users to toggle a option which makes a prop breakable or not
-  - Vertex Data
-  - Texture Data
-  - Only Static Mesh feature so users are able to customize their own "Loot Lake"
-  - Combine files feature allows all files with _jmap.txt to be combined
+BUY NOW: https://www.patreon.com/posts/jmap-official-106444441?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link
  
